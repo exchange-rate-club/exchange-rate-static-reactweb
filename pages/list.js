@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import _Layout from "../components/_Layout";
 
 export default function List() {
   return (
@@ -10,11 +11,7 @@ export default function List() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className={styles.header}>
-        <div>list title</div>
-      </header>
-
-      <main className={styles.main}>
+      <_Layout headerTitle="list header" footerTitle="list footer">
         <div>list</div>
         <div>
           <Link href="/">
@@ -24,11 +21,7 @@ export default function List() {
             <button>a链接this page!</button>
           </a>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <div>list footer</div>
-      </footer>
+      </_Layout>
     </div>
   );
 }
