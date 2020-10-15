@@ -1,6 +1,7 @@
 import styles from "../styles/Home.module.css";
 import Header from "./Header";
 import Footer from "./Footer";
+import React from "react";
 
 export default function _Layout(props) {
   const { headerTitle, footerTitle } = props;
